@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "marca": "BMW",
+    "modelo": "X3 M Sport",
+    "anio": 2023,
+    "precioUSD": 48500,
+    "kilometraje": 15000,
+    "transmision": "Automática",
+    "combustible": "Nafta",
+    "imagen": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 2,
+    "marca": "Audi",
+    "modelo": "A4 Prestige",
+    "anio": 2022,
+    "precioUSD": 36900,
+    "kilometraje": 28000,
+    "transmision": "Automática",
+    "combustible": "Diésel",
+    "imagen": "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 3,
+    "marca": "Volkswagen",
+    "modelo": "Golf GTI",
+    "anio": 2024,
+    "precioUSD": 29500,
+    "kilometraje": 5000,
+    "transmision": "Manual",
+    "combustible": "Nafta",
+    "imagen": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 4,
+    "marca": "Mercedes-Benz",
+    "modelo": "C 300 AMG Line",
+    "anio": 2023,
+    "precioUSD": 54000,
+    "kilometraje": 12000,
+    "transmision": "Automática",
+    "combustible": "Híbrido",
+    "imagen": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 5,
+    "marca": "Porsche",
+    "modelo": "Macan S",
+    "anio": 2022,
+    "precioUSD": 78900,
+    "kilometraje": 19000,
+    "transmision": "Automática",
+    "combustible": "Nafta",
+    "imagen": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 6,
+    "marca": "Toyota",
+    "modelo": "Hilux GR-Sport",
+    "anio": 2024,
+    "precioUSD": 44200,
+    "kilometraje": 8000,
+    "transmision": "Automática",
+    "combustible": "Diésel",
+    "imagen": "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80"
+  }
+]

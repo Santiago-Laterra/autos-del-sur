@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Autos del Sur</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        amber: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        },
+                        zinc: {
+                            950: '#09090b',
+                            900: '#18181b',
+                            800: '#27272a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-amber-500 selection:text-zinc-950 flex flex-col min-h-screen">
+
+    <!-- Barra de Navegación Fija con Glassmorphism -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-zinc-950/80 border-b border-zinc-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-black tracking-wider flex items-center gap-2 text-white">
+                <i class="fa-solid fa-car-side text-amber-500"></i>AUTOS <span class="text-amber-500">DEL SUR</span>
+            </a>
+            
+            <!-- Menú de Navegación -->
+            <nav class="hidden md:flex items-center gap-8 font-medium">
+                <a href="index.html" class="text-zinc-300 hover:text-amber-400 transition-colors">Inicio</a>
+                <a href="catalogo.html" class="text-zinc-300 hover:text-amber-400 transition-colors">Catálogo</a>
+                <a href="nosotros.html" class="text-amber-400 transition-colors">Nosotros</a>
+                <a href="index.html#contacto" class="bg-amber-500 hover:bg-amber-600 text-zinc-950 font-semibold px-5 py-2.5 rounded-full transition-all shadow-lg shadow-amber-500/20">Contacto</a>
+            </nav>
+
+            <!-- Botón Menú Móvil -->
+            <button id="mobile-menu-btn" class="md:hidden text-zinc-300 hover:text-amber-400 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Menú Móvil desplegable -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-900 border-b border-zinc-800 px-6 py-4 space-y-4">
+            <a href="index.html" class="block text-zinc-300 hover:text-amber-400 font-medium">Inicio</a>
+            <a href="catalogo.html" class="block text-zinc-300 hover:text-amber-400 font-medium">Catálogo</a>
+            <a href="nosotros.html" class="block text-amber-400 font-medium">Nosotros</a>
+            <a href="index.html#contacto" class="block text-center bg-amber-500 hover:bg-amber-600 text-zinc-950 font-semibold py-2.5 rounded-full">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="flex-grow pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+        <!-- Título de Sección -->
+        <div class="text-center mb-16">
+            <span class="text-amber-500 text-xs font-bold uppercase tracking-widest bg-amber-500/10 border border-amber-500/20 px-4 py-1.5 rounded-full">Nuestra Trayectoria</span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mt-4 tracking-tight">Sobre Autos del Sur</h1>
+            <p class="text-zinc-400 mt-2 max-w-xl mx-auto">Más de 15 años brindando confianza, transparencia y pasión por los vehículos de alta gama en la Patagonia.</p>
+        </div>
+
+        <!-- Contenido Nosotros -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div class="space-y-6">
+                <h2 class="text-3xl font-bold text-white leading-snug">Excelencia y compromiso en cada vehículo que entregamos</h2>
+                <p class="text-zinc-300 leading-relaxed font-light">
+                    Fundada en el corazón de la Patagonia, Autos del Sur nació con el propósito de revolucionar la experiencia de compra de vehículos de alta gama. Nos especializamos en ofrecer una selección rigurosa de unidades nuevas y usadas con certificación mecánica integral.
+                </p>
+                <p class="text-zinc-400 leading-relaxed font-light">
+                    Nuestra misión es acompañarte en cada paso del proceso con asesoramiento financiero a medida, gestoría propia y una atención post-venta inigualable.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl">
+                        <div class="text-3xl font-extrabold text-amber-500 mb-1">+15</div>
+                        <div class="text-sm text-zinc-400">Años de trayectoria en el sector automotor.</div>
+                    </div>
+                    <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-2xl">
+                        <div class="text-3xl font-extrabold text-amber-500 mb-1">100%</div>
+                        <div class="text-sm text-zinc-400">Garantía y revisión técnica certificada.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute inset-0 bg-amber-500/10 rounded-3xl blur-2xl pointer-events-none"></div>
+                <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&w=800&q=80" alt="Concesionaria Autos del Sur" class="relative rounded-3xl shadow-2xl border border-zinc-800 w-full object-cover h-[450px]">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-900 border-t border-zinc-800 text-zinc-400 py-16 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <a href="index.html" class="text-2xl font-black tracking-wider text-white flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-car-side text-amber-500"></i>AUTOS <span class="text-amber-500">DEL SUR</span>
+                </a>
+                <p class="text-sm text-zinc-400 leading-relaxed">
+                    Concesionaria líder en vehículos de alta gama en la Patagonia. Garantía, transparencia y excelencia en cada operación.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4 border-l-2 border-amber-500 pl-3">Enlaces Rápidos</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="index.html" class="hover:text-amber-400 transition-colors">Inicio</a></li>
+                    <li><a href="catalogo.html" class="hover:text-amber-400 transition-colors">Catálogo de Vehículos</a></li>
+                    <li><a href="nosotros.html" class="hover:text-amber-400 transition-colors">Sobre Nosotros</a></li>
+                    <li><a href="index.html#contacto" class="hover:text-amber-400 transition-colors">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold text-lg mb-4 border-l-2 border-amber-500 pl-3">Sucursal Principal</h3>
+                <p class="text-sm text-zinc-400 mb-2 flex items-center gap-2"><i class="fa-solid fa-location-dot text-amber-500"></i> Av. Héroes de Malvinas 1420, Patagonia</p>
+                <p class="text-sm text-zinc-400 mb-2 flex items-center gap-2"><i class="fa-solid fa-phone text-amber-500"></i> +54 2901 432100</p>
+                <p class="text-sm text-zinc-400 flex items-center gap-2"><i class="fa-solid fa-envelope text-amber-500"></i> contacto@autosdelsur.com</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-zinc-800/80 text-center text-xs text-zinc-500">
+            &copy; 2026 Autos del Sur. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Script menú móvil -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
